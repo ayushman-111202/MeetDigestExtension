@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Meet Summary Assistant</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="/assets/icon-48.png" alt="Logo" class="logo">
+      <h1>Meet Summary Assistant</h1>
+    </div>
+    
+    <div class="status-container">
+      <div class="status-indicator" id="status-indicator"></div>
+      <span id="status-text">Checking status...</span>
+    </div>
+    
+    <div class="message" id="message">To enable, you must be in a meeting</div>
+    
+    <div class="button-container">
+      <button id="toggle-btn" class="primary-button">Enable</button>
+    </div>
+    
+    <div class="info-section">
+      <h2>How it works</h2>
+      <p>This extension automatically summarizes your Google Meet conversations and identifies key information like:</p>
+      <ul>
+        <li>Important dates</li>
+        <li>Next meeting schedules</li>
+        <li>Action items</li>
+        <li>Key topics discussed</li>
+      </ul>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
