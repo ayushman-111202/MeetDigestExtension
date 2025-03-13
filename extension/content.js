@@ -854,7 +854,9 @@ function setupTranscriptObserver() {
   // Create a new observer to watch for caption elements
   observer = new MutationObserver(mutations => {
     // Look for both live captions and transcript panels
-    const captionsContainer = document.querySelector('.VfPpkd-g88pbe-S7WLpb');
+    const captionsContainer = document.querySelector('.bh44bd');
+    console.log(captionsContainer);
+    
     const transcriptContainer = document.querySelector('.TBMuR');
     
     if (captionsContainer) {
@@ -968,7 +970,7 @@ function sendFullTranscriptToBackend() {
   };
   
   // Send to backend
-  const backendUrl = 'http://localhost:5000/api/meeting-transcript';
+  const backendUrl = 'http://localhost:5000/transcript/add';
   
   fetch(backendUrl, {
     method: 'POST',
